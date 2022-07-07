@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-hover: #364FC7;
+  }
+  
+  body.dark {
+    --bg-color: #00082F;
+    --text-color: #FFFFFF;
+    --primary-color: #4263EB;
+    --primary-color-hover: #364FC7;
+  }
+  
+  body.pink {
+    --bg-color: #FFF0F6;
+    --text-color: #1F000B;
+    --primary-color: #D6336C;
+    --primary-color-hover: #A61E4D;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.2s linear;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+  }
+  
+  img {
+    width: 100%; 
+  }
+  
+  img.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3.7px;
+    border: var(--primary-color) solid 4px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 48px 0;
+  }
+  
+  ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color); /* hex: 0 - F */
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-size: 14px;
+  
+    margin-bottom: 16px;
+    border-radius: 6px;
+  
+    transition: background 400ms;
+  }
+  
+  /* pseudo-class */
+  ul li a:hover {
+    background: var(--primary-color-hover);
+  }
+  
+  footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+  
+  footer:hover {
+    opacity: 1;
+  }
+  
+  footer a{
+    color:var(--text-color)
+  }
+
+/* botão */
+.checkbox {
+    opacity: 0;
+}
+
+.label {
+    background-color: var(--text-color);
+    border-radius: 50px;
+    cursor:pointer;
+
+    display: flex;
+    aling: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.0);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f1c40f;    
+}
+
+/* troca de genero */
+.fa-child-dress {
+    color: #f1c40f;
+}
+
+.fa-child {
+    color: #f1c40f;    
+}
